@@ -35,7 +35,7 @@ print(user_ids)
 users = [user for id in user_ids if (user := get_user(id)) is not None]
 print(json.dumps(users, indent=2))
 
-openai_api_key = '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'
+openai_api_key = 'key' # key = chave de api da OpenAI
 openai.api_key = openai_api_key
 
 for user in users:
